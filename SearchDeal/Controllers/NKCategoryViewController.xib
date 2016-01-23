@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKCategoryViewController">
+            <connections>
+                <outlet property="mainTableView" destination="ReG-dE-9QY" id="qzl-PZ-bfY"/>
+                <outlet property="subTableView" destination="log-hf-Ld4" id="YeS-uR-6lf"/>
+                <outlet property="view" destination="60R-6d-waA" id="TAP-rN-0oa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="60R-6d-waA">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="560"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ReG-dE-9QY" userLabel="Main Table View">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="560"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="d4X-jr-cPt"/>
+                        <outlet property="delegate" destination="-1" id="qqa-pQ-CI9"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="log-hf-Ld4" userLabel="SUBTable View">
+                    <rect key="frame" x="200" y="0.0" width="200" height="560"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Jef-g9-lkA"/>
+                        <outlet property="delegate" destination="-1" id="W61-Sh-OMt"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ReG-dE-9QY" firstAttribute="width" secondItem="log-hf-Ld4" secondAttribute="width" id="5Mg-OP-GPe"/>
+                <constraint firstItem="log-hf-Ld4" firstAttribute="leading" secondItem="ReG-dE-9QY" secondAttribute="trailing" id="HL4-Tt-YOw"/>
+                <constraint firstItem="log-hf-Ld4" firstAttribute="top" secondItem="60R-6d-waA" secondAttribute="top" id="LlE-fI-yPg"/>
+                <constraint firstItem="log-hf-Ld4" firstAttribute="leading" secondItem="ReG-dE-9QY" secondAttribute="trailing" id="PqV-3R-6vP"/>
+                <constraint firstAttribute="trailing" secondItem="log-hf-Ld4" secondAttribute="trailing" id="Ydj-50-I3a"/>
+                <constraint firstAttribute="bottom" secondItem="ReG-dE-9QY" secondAttribute="bottom" id="f8O-Zs-Mcb"/>
+                <constraint firstItem="ReG-dE-9QY" firstAttribute="top" secondItem="60R-6d-waA" secondAttribute="top" id="pIJ-hT-s4t"/>
+                <constraint firstItem="ReG-dE-9QY" firstAttribute="leading" secondItem="60R-6d-waA" secondAttribute="leading" id="sbD-P2-8Xg"/>
+                <constraint firstAttribute="bottom" secondItem="log-hf-Ld4" secondAttribute="bottom" id="wCe-bu-wAd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="301" y="27"/>
+        </view>
+    </objects>
+</document>

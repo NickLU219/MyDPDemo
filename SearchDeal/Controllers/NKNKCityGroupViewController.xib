@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKNKCityGroupViewController">
+            <connections>
+                <outlet property="tableView" destination="25F-Xi-mXw" id="lrT-Ot-Jvu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-Mp-ThG" userLabel="头部View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_navigationBar_normal" translatesAutoresizingMaskIntoConstraints="NO" id="WIb-tS-Qlo">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwO-H4-neo">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="AeH-uX-rID"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="btn_navigation_close"/>
+                            <connections>
+                                <action selector="clickToClose:" destination="-1" eventType="touchUpInside" id="PYa-uR-bal"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市列表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-2I-bSX">
+                            <rect key="frame" x="60" y="0.0" width="540" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Xih-2I-bSX" secondAttribute="bottom" id="8CX-uP-zpp"/>
+                        <constraint firstItem="wwO-H4-neo" firstAttribute="leading" secondItem="8Rx-Mp-ThG" secondAttribute="leading" id="A6t-fa-GK7"/>
+                        <constraint firstItem="WIb-tS-Qlo" firstAttribute="leading" secondItem="8Rx-Mp-ThG" secondAttribute="leading" id="JIO-gH-k95"/>
+                        <constraint firstItem="wwO-H4-neo" firstAttribute="top" secondItem="8Rx-Mp-ThG" secondAttribute="top" id="RFv-mu-Mcw"/>
+                        <constraint firstAttribute="trailing" secondItem="Xih-2I-bSX" secondAttribute="trailing" id="UoU-NZ-jEB"/>
+                        <constraint firstAttribute="bottom" secondItem="WIb-tS-Qlo" secondAttribute="bottom" id="dIL-Df-4dP"/>
+                        <constraint firstAttribute="trailing" secondItem="WIb-tS-Qlo" secondAttribute="trailing" id="eY9-i4-MJz"/>
+                        <constraint firstItem="WIb-tS-Qlo" firstAttribute="top" secondItem="8Rx-Mp-ThG" secondAttribute="top" id="nhX-ht-kw8"/>
+                        <constraint firstAttribute="height" constant="60" id="nt5-OU-gJD"/>
+                        <constraint firstItem="Xih-2I-bSX" firstAttribute="top" secondItem="8Rx-Mp-ThG" secondAttribute="top" id="p8E-Z5-XWm"/>
+                        <constraint firstItem="Xih-2I-bSX" firstAttribute="leading" secondItem="wwO-H4-neo" secondAttribute="trailing" id="tqr-wn-MxS"/>
+                        <constraint firstAttribute="bottom" secondItem="wwO-H4-neo" secondAttribute="bottom" id="xug-3d-4Oa"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="25F-Xi-mXw">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gFe-99-rrw"/>
+                        <outlet property="delegate" destination="-1" id="n8q-Vk-cll"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="25F-Xi-mXw" firstAttribute="top" secondItem="8Rx-Mp-ThG" secondAttribute="bottom" id="2IK-Pi-e9R"/>
+                <constraint firstItem="8Rx-Mp-ThG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Ln-0G-ddT"/>
+                <constraint firstAttribute="trailing" secondItem="8Rx-Mp-ThG" secondAttribute="trailing" id="axa-Pt-q80"/>
+                <constraint firstAttribute="bottom" secondItem="25F-Xi-mXw" secondAttribute="bottom" id="rNp-Mg-zDD"/>
+                <constraint firstItem="8Rx-Mp-ThG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sBA-Ow-2K8"/>
+                <constraint firstAttribute="trailing" secondItem="25F-Xi-mXw" secondAttribute="trailing" id="vGj-cz-LAp"/>
+                <constraint firstItem="25F-Xi-mXw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xRo-6N-uLO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_navigationBar_normal" width="124" height="124"/>
+        <image name="btn_navigation_close" width="30" height="30"/>
+    </resources>
+</document>
