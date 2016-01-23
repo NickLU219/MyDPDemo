@@ -81,6 +81,8 @@
 		E3FC71A21C535132008BAC9B /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC718E1C535132008BAC9B /* UIScrollView+MJRefresh.m */; };
 		E3FC71A31C535132008BAC9B /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71901C535132008BAC9B /* UIView+MJExtension.m */; };
 		E3FC71AB1C535EC0008BAC9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AA1C535EC0008BAC9B /* MBProgressHUD.m */; };
+		E3FC71B01C536640008BAC9B /* NKBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AF1C536640008BAC9B /* NKBaseCollectionViewController.m */; };
+		E3FC71B31C536FBD008BAC9B /* NKSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71B21C536FBD008BAC9B /* NKSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +244,10 @@
 		E3FC71901C535132008BAC9B /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		E3FC71A91C535EC0008BAC9B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MJRefresh/MBProgressHUD.h; sourceTree = "<group>"; };
 		E3FC71AA1C535EC0008BAC9B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MJRefresh/MBProgressHUD.m; sourceTree = "<group>"; };
+		E3FC71AE1C536640008BAC9B /* NKBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBaseCollectionViewController.h; sourceTree = "<group>"; };
+		E3FC71AF1C536640008BAC9B /* NKBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBaseCollectionViewController.m; sourceTree = "<group>"; };
+		E3FC71B11C536FBD008BAC9B /* NKSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSearchViewController.h; sourceTree = "<group>"; };
+		E3FC71B21C536FBD008BAC9B /* NKSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,8 +397,12 @@
 		E35291C91C4F802A00A0B12E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3FC71AE1C536640008BAC9B /* NKBaseCollectionViewController.h */,
+				E3FC71AF1C536640008BAC9B /* NKBaseCollectionViewController.m */,
 				E349BA5B1C50B0CC00EAEE2C /* NKMainCollectionViewController.h */,
 				E349BA5C1C50B0CC00EAEE2C /* NKMainCollectionViewController.m */,
+				E3FC71B11C536FBD008BAC9B /* NKSearchViewController.h */,
+				E3FC71B21C536FBD008BAC9B /* NKSearchViewController.m */,
 				E3AE74C81C51B8F5008E9963 /* NKSortViewController.h */,
 				E3AE74C91C51B8F5008E9963 /* NKSortViewController.m */,
 				E3AE74CB1C51C00C008E9963 /* NKRegionViewController.h */,
@@ -738,6 +748,7 @@
 				E30B18361C532B27002554AC /* SDWebImageManager.m in Sources */,
 				E30B18081C531F59002554AC /* NKCollectionViewCell.m in Sources */,
 				E35291DE1C4F809B00A0B12E /* DPAPI.m in Sources */,
+				E3FC71B31C536FBD008BAC9B /* NKSearchViewController.m in Sources */,
 				E349BA481C507B6200EAEE2C /* NKDataManager.m in Sources */,
 				E30B18321C532B27002554AC /* SDWebImageCompat.m in Sources */,
 				E3FC719C1C535132008BAC9B /* MJRefreshGifHeader.m in Sources */,
@@ -760,6 +771,7 @@
 				E349BA541C50835800EAEE2C /* NKRegion.m in Sources */,
 				E3FC71A21C535132008BAC9B /* UIScrollView+MJRefresh.m in Sources */,
 				E30B18391C532B27002554AC /* UIImage+GIF.m in Sources */,
+				E3FC71B01C536640008BAC9B /* NKBaseCollectionViewController.m in Sources */,
 				E30B183A1C532B27002554AC /* UIImage+MultiFormat.m in Sources */,
 				E349BA571C508BC400EAEE2C /* NKCityGroups.m in Sources */,
 				E3FC71971C535132008BAC9B /* MJRefreshAutoNormalFooter.m in Sources */,

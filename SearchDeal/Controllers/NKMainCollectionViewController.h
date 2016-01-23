@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NKBaseCollectionViewController.h"
 
-@interface NKMainCollectionViewController : UICollectionViewController
+
+@interface NKMainCollectionViewController : NKBaseCollectionViewController
 
 @end
