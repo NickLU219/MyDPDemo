@@ -22,6 +22,7 @@
 //#import "MBProgressHUD.h"
 #import "NKSearchViewController.h"
 #import "NKNavigationController.h"
+#import "NKMapViewController.h"
 
 
 @interface NKMainCollectionViewController () <DPRequestDelegate>
@@ -83,6 +84,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self setUpLeftItems];
 
     [self listenNotificationCenter];
+    [self loadNewDeals];
 }
 #pragma mark - listenMethod
 - (void)listenNotificationCenter {
@@ -96,6 +98,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
     self.categoryView.mainLabel.text = category.name;
     self.categoryView.subLabel.text = notify.userInfo[@"SubCategory"];
+    self.selectedCategoryName = self.categoryView.mainLabel.text;
+    self.selectedSubCategoryName = self.categoryView.subLabel.text;
     [self loadNewDeals];
 }
 
@@ -160,6 +164,12 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - targetMethod
 - (void)clickMapItem {
     NSLog(@"%s",__func__);
+    NKMapViewController *mapVc = [NKMapViewController new];
+
+    NKNavigationController *nav = [[NKNavigationController alloc] initWithRootViewController:mapVc];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+
 }
 - (void)clickSearchItem {
     NSLog(@"%s",__func__);

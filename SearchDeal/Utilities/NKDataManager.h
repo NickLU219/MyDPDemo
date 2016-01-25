@@ -13,7 +13,7 @@
 #import "NKRegion.h"
 #import "NKCityGroups.h"
 #import "NKSorts.h"
-
+#import "NKBusiness.h"
 
 @interface NKDataManager : NSObject
 
@@ -39,4 +39,12 @@
  *  返回排序方式组
  */
 + (NSArray<NKSorts *> *)getAllSorts;
+/**
+ *  返回商家数组
+ */
++ (NSArray<NKBusiness *> *)getAllBusiness:(NKDeal *)deal;
+/**
+ *  指定某一个订单对象，返回这个订单所属的分类对象
+ */
++ (NKCategory *)getAllCategory:(NKDeal *)deal;
 @end

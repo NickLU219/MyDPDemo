@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NKBusiness.h"
 
 @interface NKDeal : NSObject
 //decription是NSObject一个只读属性；
@@ -21,4 +22,10 @@
 @property (nonatomic, assign) int purchase_count;
 //团购订单的小图对应的url
 @property (nonatomic, strong) NSString *s_image_url;
+
+/**  business */
+@property (nonatomic, strong) NSArray<NKBusiness *> *businesses;
+
+/**  分类 */
+@property (nonatomic, strong) NSArray<NSString *> *categories;
 @end

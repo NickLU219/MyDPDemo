@@ -29,6 +29,8 @@
 		E30B183D1C532B27002554AC /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B182C1C532B27002554AC /* UIImageView+WebCache.m */; };
 		E30B183E1C532B27002554AC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B182E1C532B27002554AC /* UIView+WebCacheOperation.m */; };
 		E30B18411C533047002554AC /* NKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B18401C533047002554AC /* NKLabel.m */; };
+		E31761921C55C467000B3DF0 /* NKBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761911C55C467000B3DF0 /* NKBusiness.m */; };
+		E31761951C55C8C6000B3DF0 /* NKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761941C55C8C6000B3DF0 /* NKAnnotation.m */; };
 		E349BA421C507AFC00EAEE2C /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = E349BA3E1C507AFC00EAEE2C /* categories.plist */; };
 		E349BA431C507AFC00EAEE2C /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = E349BA3F1C507AFC00EAEE2C /* cities.plist */; };
 		E349BA441C507AFC00EAEE2C /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = E349BA401C507AFC00EAEE2C /* cityGroups.plist */; };
@@ -83,6 +85,7 @@
 		E3FC71AB1C535EC0008BAC9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AA1C535EC0008BAC9B /* MBProgressHUD.m */; };
 		E3FC71B01C536640008BAC9B /* NKBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AF1C536640008BAC9B /* NKBaseCollectionViewController.m */; };
 		E3FC71B31C536FBD008BAC9B /* NKSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71B21C536FBD008BAC9B /* NKSearchViewController.m */; };
+		E3FC71D61C55AF4B008BAC9B /* NKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71D51C55AF4B008BAC9B /* NKMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,10 @@
 		E30B182E1C532B27002554AC /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		E30B183F1C533047002554AC /* NKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKLabel.h; sourceTree = "<group>"; };
 		E30B18401C533047002554AC /* NKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLabel.m; sourceTree = "<group>"; };
+		E31761901C55C467000B3DF0 /* NKBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBusiness.h; sourceTree = "<group>"; };
+		E31761911C55C467000B3DF0 /* NKBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBusiness.m; sourceTree = "<group>"; };
+		E31761931C55C8C6000B3DF0 /* NKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAnnotation.h; sourceTree = "<group>"; };
+		E31761941C55C8C6000B3DF0 /* NKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAnnotation.m; sourceTree = "<group>"; };
 		E349BA3E1C507AFC00EAEE2C /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
 		E349BA3F1C507AFC00EAEE2C /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		E349BA401C507AFC00EAEE2C /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
@@ -248,6 +255,8 @@
 		E3FC71AF1C536640008BAC9B /* NKBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBaseCollectionViewController.m; sourceTree = "<group>"; };
 		E3FC71B11C536FBD008BAC9B /* NKSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSearchViewController.h; sourceTree = "<group>"; };
 		E3FC71B21C536FBD008BAC9B /* NKSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSearchViewController.m; sourceTree = "<group>"; };
+		E3FC71D41C55AF4B008BAC9B /* NKMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMapViewController.h; sourceTree = "<group>"; };
+		E3FC71D51C55AF4B008BAC9B /* NKMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,8 +358,8 @@
 		E35291951C4F7F4100A0B12E /* SearchDeal */ = {
 			isa = PBXGroup;
 			children = (
-				E35291C91C4F802A00A0B12E /* Controllers */,
 				E35291CA1C4F802A00A0B12E /* Library */,
+				E35291C91C4F802A00A0B12E /* Controllers */,
 				E35291CB1C4F802A00A0B12E /* Model */,
 				E35291CC1C4F802A00A0B12E /* Resources */,
 				E35291CD1C4F802A00A0B12E /* Utilities */,
@@ -416,6 +425,8 @@
 				E30B17C71C530B0A002554AC /* NKNKCityGroupViewController.h */,
 				E30B17C81C530B0A002554AC /* NKNKCityGroupViewController.m */,
 				E30B17C91C530B0A002554AC /* NKNKCityGroupViewController.xib */,
+				E3FC71D41C55AF4B008BAC9B /* NKMapViewController.h */,
+				E3FC71D51C55AF4B008BAC9B /* NKMapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +458,10 @@
 				E349BA561C508BC400EAEE2C /* NKCityGroups.m */,
 				E349BA581C508D4800EAEE2C /* NKSorts.h */,
 				E349BA591C508D4800EAEE2C /* NKSorts.m */,
+				E31761901C55C467000B3DF0 /* NKBusiness.h */,
+				E31761911C55C467000B3DF0 /* NKBusiness.m */,
+				E31761931C55C8C6000B3DF0 /* NKAnnotation.h */,
+				E31761941C55C8C6000B3DF0 /* NKAnnotation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -754,6 +769,7 @@
 				E3FC719C1C535132008BAC9B /* MJRefreshGifHeader.m in Sources */,
 				E30B18351C532B27002554AC /* SDWebImageDownloaderOperation.m in Sources */,
 				E30B180C1C53285D002554AC /* UIViewController+NKDealloc.m in Sources */,
+				E3FC71D61C55AF4B008BAC9B /* NKMapViewController.m in Sources */,
 				E3FC71A31C535132008BAC9B /* UIView+MJExtension.m in Sources */,
 				E3AE74CD1C51C00C008E9963 /* NKRegionViewController.m in Sources */,
 				E30B183D1C532B27002554AC /* UIImageView+WebCache.m in Sources */,
@@ -763,8 +779,10 @@
 				E30B18411C533047002554AC /* NKLabel.m in Sources */,
 				E352919B1C4F7F4100A0B12E /* AppDelegate.m in Sources */,
 				E35291981C4F7F4100A0B12E /* main.m in Sources */,
+				E31761921C55C467000B3DF0 /* NKBusiness.m in Sources */,
 				E3FC719B1C535132008BAC9B /* MJRefreshBackStateFooter.m in Sources */,
 				E30B183C1C532B27002554AC /* UIImageView+HighlightedWebCache.m in Sources */,
+				E31761951C55C8C6000B3DF0 /* NKAnnotation.m in Sources */,
 				E3FC71981C535132008BAC9B /* MJRefreshAutoStateFooter.m in Sources */,
 				E3AE74D91C51DE84008E9963 /* NKCategoryViewController.m in Sources */,
 				E349BA5D1C50B0CC00EAEE2C /* NKMainCollectionViewController.m in Sources */,

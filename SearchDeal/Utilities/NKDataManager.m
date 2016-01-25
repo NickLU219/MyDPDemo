@@ -57,6 +57,29 @@ static NSArray<NKSorts *> *_sortsArray = nil;
     return _sortsArray;
 }
 
+static NSArray<NKBusiness *> *_businessArray = nil;
++ (NSArray<NKBusiness *> *)getAllBusiness:(NKDeal *)deal {
+    if (!_businessArray) {
+        _businessArray = [[self alloc] convertDictionaryToModel:[NKBusiness class] withArray:deal.businesses];
+    }
+    return _businessArray;
+}
+
++ (NKCategory *)getAllCategory:(NKDeal *)deal {
+    NSArray<NKCategory *> *categories = [self getAllCategory];
+    
+    for (NSString *categoryStr in deal.categories) {
+        for (NKCategory *category in categories) {
+            if ([category.name isEqualToString:categoryStr]) {
+                return category;
+            }
+            if ([category.subcategories containsObject:categoryStr]) {
+                return category;
+            }
+        }
+    }
+    return nil;
+}
 #pragma mark - close method
 - (NSArray *)getAllPlistData:(NSString *)plistName withClass:(Class)modelClass {
     //获取plist文件的路径

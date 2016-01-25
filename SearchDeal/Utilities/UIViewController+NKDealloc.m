@@ -7,9 +7,13 @@
 //
 
 #import "UIViewController+NKDealloc.h"
+#import <objc/runtime.h>
 
 @implementation UIViewController (NKDealloc)
 + (void)initialize {
-    
+
+}
+- (void)NKDealloc {
+
 }
 @end
